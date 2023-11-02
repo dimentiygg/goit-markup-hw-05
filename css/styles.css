@@ -575,7 +575,8 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02e;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-form {
@@ -649,29 +650,45 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn-icon {
-  fill: #e7e9fc;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn-icon:active {
-  fill: #404bbf;
+.close-btn:hover {
+  background-color: #404bbf;
+}
+
+.close-btn:hover,
+.close-btn:focus + .close-btn-icon {
+  fill: #ffffff;
 }
 
 .rewiew-form-text {
@@ -681,6 +698,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .rewiew-form-label {
@@ -698,6 +716,9 @@ img {
   border-radius: 4px;
   border: 1px rgba(46, 47, 66, 0.4) solid;
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .rewiew-form-field:focus {
   border: 1px #4d5ae5 solid;
@@ -710,7 +731,7 @@ img {
 }
 
 .rewiew-form-field-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .comment {
@@ -727,6 +748,7 @@ img {
   left: 16px;
   transform: translateY(-50%);
   fill: #000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-form-message {
@@ -735,13 +757,16 @@ img {
   border-radius: 4px;
   border: 1px rgba(46, 47, 66, 0.4) solid;
   resize: none;
-  padding: 12px 16px;
-  color: #2e2f42;
-  font-size: 16px;
+  padding: 8px 16px;
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   margin-bottom: 16px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-form-message::placeholder {
@@ -771,12 +796,12 @@ img {
 }
 
 .rewiew-form-checkbox-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .own-checkbox-icon-click {
   visibility: hidden;
-  transition: opacity 13250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
 }
 
 .rewiew-form-own-checkbox {
@@ -789,17 +814,22 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .rewiew-form-checkbox:checked
   + .rewiew-form-checkbox-label
   .own-checkbox-icon-click {
   visibility: visible;
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .rewiew-form-button {
   display: block;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   background-color: #4d5ae5;
   border: none;
@@ -810,6 +840,7 @@ img {
   letter-spacing: 0.04em;
   border-radius: 4px;
   margin: 0 auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-form-button:hover {

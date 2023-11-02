@@ -475,22 +475,22 @@
                 id="footer-user-email"
                 placeholder="E-mail"
               />
-              <button class="footer-form-button" type="submit">
-                Subscribe
-                <svg class="footer-form-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-plane"></use>
-                </svg>
-              </button>
             </label>
+            <button class="footer-form-button" type="submit">
+              Subscribe
+              <svg class="footer-form-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal-window">
-        <button class="close-btn">
-          <svg class="close-btn-icon" width="24px" height="24px">
+        <button class="close-btn" type="button">
+          <svg class="close-btn-icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -499,18 +499,18 @@
         </p>
         <form class="rewiew-form">
           <div class="rewiew-form-field-wrapper">
-            <label class="rewiew-form-label" for="user-name">Name</label>
+            <label class="rewiew-form-label" for="user_name">Name</label>
             <div class="rewiew-form-input-wrapper">
               <input
                 class="rewiew-form-field"
                 type="text"
-                name="user_name"
-                id="user-name"
+                name="user-name"
+                id="user_name"
                 required
                 pattern="[a-zA-Zа-яА-ЯіІїЇгГйЙєЄ']+"
                 title="Dmitro"
               />
-              <svg class="rewiew-form-icon" width="18px" height="18px">
+              <svg class="rewiew-form-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -548,11 +548,11 @@
             </div>
           </div>
           <div class="rewiew-form-field-wrapper comment">
-            <label for="user-comment" class="rewiew-form-label">Comment</label>
+            <label for="user_comment" class="rewiew-form-label">Comment</label>
             <textarea
               class="rewiew-form-message"
-              name="user_comment"
-              id="user-comment"
+              name="user-comment"
+              id="user_comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -560,12 +560,12 @@
             <input
               class="rewiew-form-checkbox visually-hidden"
               type="checkbox"
-              name="user_policy"
-              id="user-policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="rewiew-form-checkbox-label" for="user-policy">
+            <label class="rewiew-form-checkbox-label" for="user-privacy">
               <span class="rewiew-form-own-checkbox">
                 <svg class="own-checkbox-icon-click" width="16px" height="16px">
                   <use href="./images/icons.svg#icon-checkbox-click"></use>
