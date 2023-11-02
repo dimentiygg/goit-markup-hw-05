@@ -584,6 +584,10 @@ img {
   gap: 24px;
 }
 
+.footer-form-wrapper {
+  margin-left: 80px;
+}
+
 .footer-form-input {
   width: 264px;
   height: 40px;
@@ -741,11 +745,11 @@ img {
 }
 
 .rewiew-form-field-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .comment {
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .rewiew-form-input-wrapper {
