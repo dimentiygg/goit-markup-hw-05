@@ -641,8 +641,8 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -690,15 +690,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover {
-  background-color: #404bbf;
-  border: none;
-}
-
+.close-btn:hover,
 .close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
+
 .close-btn:hover,
 .close-btn:focus + .close-btn-icon {
   fill: #ffffff;
