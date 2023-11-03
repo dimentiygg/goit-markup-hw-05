@@ -698,10 +698,6 @@ img {
 .close-btn:focus {
   background-color: #404bbf;
   border: none;
-}
-
-.close-btn:hover,
-.close-btn:focus + .close-btn-icon {
   fill: #ffffff;
 }
 
